@@ -1,0 +1,67 @@
+/* Write your CSS here */
+.speed-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.speed-img {
+  height: 250px;
+  width: 600px;
+}
+
+.apply-button {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 8px;
+  background-color: #0b69ff;
+  border: none;
+  border-radius: 4px;
+}
+
+.brake-button {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 8px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  border-color: #ffffff;
+  border-width: 1px;
+}
+.button-container {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .button-container {
+    flex-direction: column;
+  }
+}
+
+.speed-count {
+  color: #ffffff;
+}
