@@ -6,17 +6,23 @@ class Speedometer extends Component {
   state = {count: 0}
 
   onIncrement = () => {
-    this.setState(prevState => {
-      console.log(`previous state is ${prevState.count}`)
-      return {count: prevState.count + 10}
-    })
+    const {count} = this.state
+    if (count < 200) {
+      this.setState(prevState => {
+        console.log(`previous state is ${prevState.count}`)
+        return {count: prevState.count + 10}
+      })
+    }
   }
 
   onDecrement = () => {
-    this.setState(prevState => {
-      console.log(`previous state is ${prevState.count}`)
-      return {count: prevState.count - 10}
-    })
+    const {count} = this.state
+    if (count > 0) {
+      this.setState(prevState => {
+        console.log(`previous state is ${prevState.count}`)
+        return {count: prevState.count - 10}
+      })
+    }
   }
 
   render() {
